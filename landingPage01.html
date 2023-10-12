@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./formStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <style>
+        body{
+            font-family: 'DM Sans';
+            background-color:rgba(47, 24, 147, 1);
+        }
+        .parent{
+            height: 100vh;
+            width: 100%;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item-1{
+            border-radius: 1px;
+            margin: 10px;    
+        }
+     
+       
+     
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            width: 50%; 
+            max-width: 1200px; 
+            margin-left: 0px;
+            color: aliceblue; 
+        }
+        
+        .nav-left {
+            flex: 1; 
+            font-size: 20px;
+            white-space: nowrap; 
+            margin-left: -80px;
+        }
+        
+        .nav-right {
+            display: flex;
+            gap: 20px; 
+        }
+        
+        .nav-right-items {
+            white-space: nowrap; 
+        }
+        .nav-btn{
+            margin-top: -14px;
+        }
+        .nav-overview{
+            color: #aaa0a0;
+        }
+        
+       
+
+        .body0{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+
+            width: 100%;
+        }
+        .left{
+            width: 30%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;          
+        }
+        .rightbar{
+            width: 30%;
+     
+            height: 70vh;
+            justify-content: center;
+        }
+        .left-items{
+            margin: 5px 0;
+            line-height: 24px;
+            width: 70%;
+            color: aliceblue;
+            min-width: 20%;
+        }
+        .left-header{
+            font-size: 20px;
+            line-height: 38px;
+            white-space: nowrap; 
+        }
+
+        @media (max-width: 768px) {
+            .body0 {
+                flex-direction: column; 
+            }
+    
+            .left, .rightbar {
+                width: 100%; 
+            }
+    
+            .left-items {
+                width: 100%; 
+            }
+    
+            .navbar {
+                width: 63%; 
+            }
+
+        }
+
+        .separator-container {
+            display: flex;
+            align-items: center; 
+        }
+        
+        .separator {
+            border: none;
+            border-top: 1px solid #5c5959;
+            margin: 0 10px; 
+            width: 37%;
+        }
+        
+        .or {
+            font-weight: bold;
+            color: #5c5959;
+        }
+        
+             
+
+    </style>
+
+</head>
+<body>
+    <div class="parent item0">
+        <div class="navbar item-1">
+            <div class="nav-left">Startup 3</div>
+            <div class="nav-right">
+                <div class="nav-right-items nav-overview"> Overview</div>
+                <div class="nav-right-items"> Prices</div>
+                <div class="nav-right-items"> Blog</div>
+                <div class="nav-right-items"> Feedback</div>
+                <div class="nav-right-items nav-btn"> <button>Purchase</button></div>
+            </div>
+        </div>
+        <div class="body0">
+
+            <div class="left item-1">
+                <div class="left-items left-header"><h1>Generate <br>Awesome <br>Web Pages</h1></div>
+                <div class="left-items">
+                   <p> The most important part of the Startup <br>is the samples. 
+                    The samples form a set of 25 <br> usable pages you can use as is or <br> you can add new blocks. </div>
+                <div class="left-items"><button>Learn More</button></div>
+            </div>
+            
+            <div class="rightbar item-1">
+
+                <div>
+                    <div class="form-container">
+                        <p class="title">Sign Up Now</p>
+                        <form class="form">
+                          <input type="email" class="input" placeholder="Your Email">
+                          <input type="password" class="input" placeholder="Your Password">
+                          <span>
+                             <input type="checkbox" id="myCheckbox">
+                             <label for="myCheckbox">I agree to the Terms of Service.</label>
+                        </span> 
+                          <button class="form-btn">Sign In</button>
+                        </form>
+
+                        <span class="separator-container">
+                            <hr class="separator">
+                            <span class="or">or</span>
+                            <hr class="separator">
+                        </span>
+                        
+                       
+                        <div class="buttons-container">
+                          <div class="tweet-login-button">
+                          
+
+                            <span>Login via Twitter</span>
+                          </div>
+                          <p class="sign-up-label">
+                            Do you have an Account?<span class="sign-up-link">Sign In</span>
+                          </p>
+                         
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
